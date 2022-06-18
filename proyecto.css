@@ -1,0 +1,184 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:"nav nav"
+                        "header header"
+                        "main main"
+                        "section section"
+                        "div div"
+                        "footer footer"
+                        ;
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav{
+    grid-area: nav;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    grid-area: nav;
+    gap: 50px;
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 100px;
+    display: flex;
+    justify-self: flex-end;
+}
+header{
+    display: grid;
+    grid-area: header;
+    margin-top: 10px;
+    background-image: url("manos.jpg");
+    background-repeat : no-repeat;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    justify-content: center;
+    align-content: center;
+}
+main{
+    grid-area: main;
+    background-color: #5298ff;
+    color: white;
+}
+.medio1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "imagen1 texto1";
+    padding-left: 70px;
+}
+.medio2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "texto2 imagen2";
+    padding-right: 70px;
+}
+.imagen1{
+    width: 600px;
+    grid-area: imagen1;
+    padding-top: 50px;
+}
+.imagen2{
+    width: 600px;
+    grid-area: imagen2;
+    padding-left: 70px;
+}
+.texto1{
+    grid-area: texto1;
+    padding-right: 70px;
+    padding-top: 70px;
+}
+.texto2{
+    grid-area: texto2;
+    padding-left: 70px;
+    padding-top: 50px;
+}
+.texto{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.uno{
+    background-color: #dc3545;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+}
+.dos{
+    background-color: #ff9c07;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+}
+.tres{
+    background-color: #28a745;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+}
+.cuatro{
+    background-color: #17a2b8;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+}
+.seccion{
+    display: flex;
+    gap: 15px;
+    color: white;
+}
+.iconomano{
+    display: grid;
+    width: 50px;
+    height: 70px;
+
+}
+.iconodonar{
+    display: grid;
+    width: 50px;
+    height: 70px;
+}
+.iconoreciclar{
+    display: grid;
+    width: 50px;
+    height: 70px;
+}
+.iconomaletin{
+    display: grid;
+    width: 50px;
+    height: 70px;
+}
+.notis{
+    display: flex;
+}
+.notifias{
+    color: white;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    background-color: #5298ff;
+}
+.carteles{
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+    height: 600px;
+}
+.fotos{
+    width: 100%;
+    height: 300px ;
+}
+.contenedor{
+    padding: 20px;
+    width: 23%;
+    
+}
+
+.divs{
+    grid-area: div;
+    background-color: #5298ff;
+}
+footer{
+    grid-area: footer;
+}
+.textoabajo_uno{
+    display: grid;
+    text-align: center;
+    margin-top: 20px;
+}
